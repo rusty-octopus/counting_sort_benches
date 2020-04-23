@@ -1,5 +1,5 @@
 [package]
-name = "counting_sort_user"
+name = "counting_sort_benches"
 version = "0.1.0"
 authors = ["Philipp Werner <p.a.werner@posteo.de>"]
 edition = "2018"

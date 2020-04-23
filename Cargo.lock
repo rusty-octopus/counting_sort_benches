@@ -81,10 +81,10 @@ checksum = "283dfa78675caa48bb2639d5db195b3e43386f20040170fff6607c2a81fc9c91"
 
 [[package]]
 name = "counting_sort"
-version = "0.1.0"
+version = "0.9.0"
 
 [[package]]
-name = "counting_sort_user"
+name = "counting_sort_benches"
 version = "0.1.0"
 dependencies = [
  "count_sort",

@@ -19,7 +19,7 @@ fn create_vector_t<T: TryFrom<u32>>(number_of_elements: usize, range: Range<u32>
         let random_value_result = T::try_from(random_u32);
         match random_value_result {
             Ok(v) => vector.push(v),
-            Err(e) => println!("Error occurred converting {}", random_u32),
+            Err(_e) => println!("Error occurred converting {}", random_u32),
         };
     }
     vector
