@@ -8,3 +8,12 @@ edition = "2018"
 
 [dependencies]
 counting_sort = {path = "../counting_sort"}
+
+[dev-dependencies]
+criterion = "0.3.1"
+oorandom = "11.1.0"
+count_sort = "0.3.0"
+
+[[bench]]
+name = "comparison_to_sort"
+harness = false
