@@ -27,7 +27,8 @@ fn create_vector_t<T: TryFrom<u32>>(number_of_elements: usize, range: Range<u32>
 
 fn compare_u8(c: &mut Criterion) {
     let mut group = c.benchmark_group("Sort u8");
-    let mut number_of_elements = 10000;
+    let mut number_of_elements = 20000;
+    let increment = 20000;
     let range_min: u32 = 0;
     let range_max: u32 = 256;
     while number_of_elements <= 100000 {
@@ -62,14 +63,15 @@ fn compare_u8(c: &mut Criterion) {
                 BatchSize::LargeInput,
             )
         });
-        number_of_elements += 10000;
+        number_of_elements += increment;
     }
     group.finish();
 }
 
 fn compare_u16(c: &mut Criterion) {
     let mut group = c.benchmark_group("Sort u16");
-    let mut number_of_elements = 10000;
+    let mut number_of_elements = 20000;
+    let increment = 20000;
     let range_min: u32 = 512;
     let range_max: u32 = 1024;
     while number_of_elements <= 100000 {
@@ -104,7 +106,7 @@ fn compare_u16(c: &mut Criterion) {
                 BatchSize::LargeInput,
             )
         });
-        number_of_elements += 10000;
+        number_of_elements += increment;
     }
     group.finish();
 }
