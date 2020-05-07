@@ -81,9 +81,9 @@ checksum = "283dfa78675caa48bb2639d5db195b3e43386f20040170fff6607c2a81fc9c91"
 
 [[package]]
 name = "counting_sort"
-version = "1.0.2"
+version = "1.0.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a27dc5422c0768b3fbd5e7d9df8bb63092913d077a53dc2e8ff4c6d86f82aef1"
+checksum = "297920e8fb59f10da208afb44adc1fd5f94b4ce01bee82540f66c7f137b7538b"
 
 [[package]]
 name = "counting_sort_benches"

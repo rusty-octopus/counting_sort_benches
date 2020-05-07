@@ -6,7 +6,7 @@ edition = "2018"
 documentation = "Benchmakrs for counting sort implementtion"
 
 [dependencies]
-counting_sort = "1.0.2"
+counting_sort = "1.0.3"
 
 [dev-dependencies]
 criterion = "0.3.1"
