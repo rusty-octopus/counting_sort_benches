@@ -111,9 +111,11 @@ fn compare_u16(c: &mut Criterion) {
     group.finish();
 }
 
+mod perf;
+
 criterion_group!(
-        name = benches;
-        config = Criterion::default().measurement_time(Duration::from_secs(65));
-        targets = compare_u8, compare_u16
-    );
+    name = benches;
+    config = Criterion::default().measurement_time(Duration::from_secs(65)).with_profiler(perf::FlamegraphProfiler::new(100));
+    targets = compare_u8, compare_u16
+);
 criterion_main!(benches);

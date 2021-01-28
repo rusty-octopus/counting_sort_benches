@@ -9,7 +9,8 @@ documentation = "Benchmakrs for counting sort implementtion"
 counting_sort = "1.0.3"
 
 [dev-dependencies]
-criterion = "0.3.1"
+pprof = { version = "0.3", features = ["flamegraph"] }
+criterion = "0.3"
 oorandom = "11.1.0"
 count_sort = "0.3.0"
 
